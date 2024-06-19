@@ -1,38 +1,34 @@
-# create-svelte
+# A tiny website for Week13
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+![capture_1](./static/img/capture_1.png)
+![capture_2](./static/img/capture_2.png)
+![capture_3](./static/img/capture_3.png)
 
-## Creating a project
+## Tools used:
 
-If you're seeing this, you've probably already done this step. Congrats!
+1. SvelteKit
+2. Tailwind CSS
+3. MySQL
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+## It will have features like:
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+### Home
 
-## Developing
+1. [] A List of posts
+2. [] List of comments for each post
+   - [] Write comment
+   - [] Delete comment
+   - [] Expand/Collapse when clicked
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+### Write
 
-```bash
-npm run dev
+1. [] Write a new post
+   - [] only for authorized users
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+### Sign In
 
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+1. [] Sign up
+   - [] Duplicate check
+2. [] Sign in
+   - [] JWT or OAuth
+3. [] Password Recovery
