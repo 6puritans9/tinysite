@@ -14,7 +14,7 @@
 
 ### Home
 
-1. [] A List of posts
+1. [x] A List of posts
 2. [] List of comments for each post
    - [] Write comment
    - [] Delete comment
@@ -22,7 +22,7 @@
 
 ### Write
 
-1. [] Write a new post
+1. [x] Write a new post
    - [] only for authorized users
 
 ### Sign In
