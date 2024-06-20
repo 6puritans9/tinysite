@@ -1,6 +1,14 @@
 <script>
 	import Anchor from '$lib/components/Anchor.svelte';
-	import Button from '$lib/components/Button.svelte';
+	// import Button from '$lib/components/Button.svelte';
+	// import { onMount } from 'svelte';
+	// let isSignedIn = false;
+
+	// onMount(() => {
+	// 	if (typeof window !== 'undefined' && sessionStorage.getItem('username')) {
+	// 		isSignedIn = true;
+	// 	}
+	// });
 </script>
 
 <nav class="mx-auto">

@@ -1,12 +1,11 @@
 import { getUserByName } from '$lib/server/db';
-import { POST } from '../logout/+server.js';
 
 export const actions = {
 	default: async ({ request }) => {
 		const formData = await request.formData();
 		const name = formData.get('name') as string;
 		const password = formData.get('password') as string;
-		console.log(formData);
+		// console.log(formData);
 
 		if (!name || !password)
 			return {
@@ -30,7 +29,7 @@ export const actions = {
 
 			return {
 				status: 200,
-				body: { message: 'Auth successful', userId: user.id }
+				body: { message: 'Auth successful', userId: user.id, username: user.name }
 			};
 		} catch (error) {
 			return {

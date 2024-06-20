@@ -3,7 +3,7 @@
 	let formElement: HTMLFormElement | null = null;
 	export let data;
 
-	console.log(data);
+	// console.log(data);
 </script>
 
 <Signin bind:formElement />

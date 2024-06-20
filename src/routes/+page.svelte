@@ -1,4 +1,5 @@
 <script>
+	import SignoutBtn from '$lib/components/SignoutBtn.svelte';
 	export let data;
 </script>
 
@@ -22,6 +23,10 @@
 		</li>
 	{/each}
 </ul>
+
+{#if sessionStorage.username}
+	<SignoutBtn></SignoutBtn>
+{/if}
 
 <style>
 	ul {

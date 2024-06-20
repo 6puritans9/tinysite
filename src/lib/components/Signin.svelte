@@ -1,5 +1,8 @@
 <script lang="ts">
 	import { createEventDispatcher } from 'svelte';
+	import { goto } from '$app/navigation';
+	import { authStore } from '$lib/stores/auth';
+
 	export let formElement: HTMLFormElement | null = null;
 	const dispatch = createEventDispatcher();
 
@@ -12,11 +15,19 @@
 			body: formData
 		});
 
+		console.log(response);
 		const result = await response.json();
 		console.log(result);
 
 		if (response.ok) {
+			authStore.set({
+				isLoggedIn: true,
+				username: result.username
+			});
+
 			dispatch('success', { message: result.message });
+			alert('Successfully signed in!');
+			goto('/');
 		} else {
 			dispatch('error', { error: result.error });
 		}
